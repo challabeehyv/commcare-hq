@@ -10,7 +10,7 @@ from django.utils.dateparse import parse_date
 import openpyxl
 
 from custom.icds.utils.location import find_test_state_locations
-from custom.icds_reports.data_pull.exceptions import UnboundDataPullException, DuplicateStateResult
+from custom.icds_reports.data_pull.exceptions import UnboundDataPullException
 from custom.icds_reports.data_pull.queries import (
     AWCSElectricityAndCBECount,
     AWCSFacilitiesCount,
@@ -266,8 +266,6 @@ class VHSNDMonthlyReport(MonthBasedDataPull):
         state_results = defaultdict(dict)
         for state_name in result.keys():
             # constructing and mapping writers to state names
-            if state_name in state_results:
-                raise DuplicateStateResult("%s is twice in results" % state_name)
             wb = openpyxl.Workbook()
             ws = wb.create_sheet(title=state_name, index=0)
             ws.append(headers)

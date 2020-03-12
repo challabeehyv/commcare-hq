@@ -5,6 +5,3 @@ class UnboundDataPullException(Exception):
 class DataPullInProgressError(Exception):
     pass
 
-
-class DuplicateStateResult(Exception):
-    pass
