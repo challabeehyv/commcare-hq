@@ -523,6 +523,226 @@
         "datatype": "string",
         "type": "raw",
         "property_name": "phone_number"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "hh_member_number",
+        "datatype": "int",
+        "type": "raw",
+        "property_name": "hh_member_number"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "bank_account_number",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "bank_account_number"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "ifsc_code",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "ifsc_code"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "blood_group",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "blood_group"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "referral_status",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "referral_status"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "rch_id",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "rch_id"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "mcts_id",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "mcts_id"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "site_death",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "site_death"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "reason_closure",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "reason_closure"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "UUID",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "UUID"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "last_preg_tt",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "last_preg_tt"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "child_alive",
+        "datatype": "boolean",
+        "type": "raw",
+        "property_name": "child_alive"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "time_birth",
+        "datatype": "datetime",
+        "type": "raw",
+        "property_name": "time_birth"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "person_case_id",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "person_case_id"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "father_name",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "father_name"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "mother_case_id",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "mother_case_id"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "mother_name",
+        "datatype": "string",
+        "type": "raw",
+        "property_name": "mother_name"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "private_admit",
+        "datatype": "boolean",
+        "type": "raw",
+        "property_name": "private_admit"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "date_last_private_admit",
+        "datatype": "date",
+        "type": "raw",
+        "property_name": "date_last_private_admit"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "date_return_private",
+        "datatype": "date",
+        "type": "raw",
+        "property_name": "date_return_private"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "primary_admit",
+        "datatype": "boolean",
+        "type": "raw",
+        "property_name": "primary_admit"
+      },
+      {
+        "display_name": null,
+        "property_path": [],
+        "is_primary_key": false,
+        "is_nullable": true,
+        "column_id": "is_oos",
+        "datatype": "boolean",
+        "type": "raw",
+        "property_name": "is_oos"
       }
     ],
     "named_expressions": {},
