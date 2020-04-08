@@ -48,13 +48,14 @@ class BiharApiChildVaccineHelper(BaseICDSAggregationDistributedHelper):
 
     @property
     def bihar_state_id(self):
-        return SQLLocation.objects.get(name='Bihar', location_type__name='state').location_id
+        # return SQLLocation.objects.get(name='Bihar', location_type__name='state').location_id
+        return 'st1'
 
     def aggregation_query(self):
         month_start_string = month_formatter(self.month)
         month_end_string = month_formatter(self.month + relativedelta(months=1, seconds=-1))
         person_case_ucr = get_table_name(self.domain, 'static-person_cases_v3')
-        ccs_case_ucr = get_table_name(self.domain, 'static-ccs_record_cases'),
+        ccs_case_ucr = get_table_name(self.domain, 'static-ccs_record_cases')
         child_health_monthly = get_child_health_tablename(self.month)
 
         columns = (
