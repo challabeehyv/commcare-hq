@@ -345,6 +345,8 @@ class ChildHealthMonthlyAggregationDistributedHelper(BaseICDSAggregationDistribu
             ("opened_on", "child_health.opened_on"),
             ("birth_weight", "child_health.birth_weight"),
             ("child_person_case_id", "child_health.mother_id"),
+            ("delivery_nature", "del_form.delivery_nature"),
+            ("term_days", "(del_form.add::DATE - del_form.edd::DATE) + 280)"),
         )
         yield """
         INSERT INTO "{child_tablename}" (
@@ -386,6 +388,8 @@ class ChildHealthMonthlyAggregationDistributedHelper(BaseICDSAggregationDistribu
               AND df.month = %(start_date)s
               AND child_health.state_id = df.state_id
               AND child_health.supervisor_id = df.supervisor_id
+            LEFT OUTER JOIN "{delivery_form}" del_form ON child_health.doc_id = del_form.case_id
+              AND child_health.supervisor_id = del_form.supervisor_id
             WHERE child_health.doc_id IS NOT NULL
               AND child_health.state_id = %(state_id)s
               AND {open_in_month}
